@@ -22,9 +22,7 @@ module.exports = {
       email: 'yurm04@gmail.com',
       twitter: 'Yurm04',
       github: 'yurm04/',
-      telegram: '',
-      rss: '',
-      vkontakte: ''
+      medium: 'Yurm',
     }
   }
 };
