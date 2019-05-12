@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://www.yuraima.com',
+  title: 'Blog by Yuraima Estevez',
+  subtitle: 'Sporadically coherent ramblings on life, tech, and tacos.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: '',
   menu: [
     {
       label: 'Articles',
@@ -23,16 +23,13 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Yuraima Estevez',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Yuraima Estevez is a software engineer at The New York Times.  She cares deeply about building open source tools, empathetic web design and development, and finding the best tacos in whatever city she happens to be.',
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'yurm04@gmail.co,',
+      twitter: 'https://twitter.com/Yurm04',
+      github: 'https://github.com/yurm04/',
     }
   }
 };
