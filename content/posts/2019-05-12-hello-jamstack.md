@@ -4,7 +4,7 @@ title: 'Hello, JAMstack!'
 slug: hello-jamstack
 draft: true
 date: 2019-05-12T17:15:27.530Z
-description: Why I built my blog on the JAMstack
+description: Why I built my blog on the JAMstack with Gatsby.js and Netlify.
 category: JAMstack
 tags:
   - Architecture
