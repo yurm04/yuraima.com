@@ -1,6 +1,8 @@
 [build]
   publish = "public"
   command = "npm run shipit"
+  functions = "functions"
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
+  GO_IMPORT_PATH = "github.com/yurm04/yuraima.com"
