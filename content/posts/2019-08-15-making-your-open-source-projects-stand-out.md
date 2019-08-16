@@ -22,4 +22,4 @@ _How should you set up your documentation?_
 
 _Will anyone want to contribute?_  
 
-Every open source project is different and you'll need to come up with these answers on your own, but there are some best practices that anyone can follow in order to set up their projects for success right away.  Head over to the [Times Open](https://open.nytimes.com/) blog to read my post and find out [_How to Take Your Open Source Project from Good to Great_](https://open.nytimes.com/how-to-take-your-open-source-project-from-good-to-great-49c392175e5c)_!_
+Every open source project is different and you'll need to come up with these answers on your own, but there are some best practices that anyone can follow in order to set up their projects for success right away.  Head over to the [Times Open](https://open.nytimes.com/) blog to read my post and find out [_How to Take Your Open Source Project from Good to Great_](https://open.nytimes.com/how-to-take-your-open-source-project-from-good-to-great-49c392175e5c).
