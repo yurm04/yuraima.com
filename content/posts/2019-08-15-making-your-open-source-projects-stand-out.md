@@ -2,7 +2,7 @@
 template: post
 title: Making Your Open Source Projects Stand Out
 slug: open-source-guide
-draft: true
+draft: false
 date: 2019-08-16T00:15:51.457Z
 description: >-
   A thorough guide to setting your open source project up for success.  Get tips
