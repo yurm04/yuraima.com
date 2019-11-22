@@ -8,7 +8,7 @@ import defaultThemeColors from "gatsby-theme-blog/src/gatsby-plugin-theme-ui/col
  */
 
 
-// YE: updating the colors works.
+// YE: having this in this folder doesn't work
 const darkBlue = `#007acc`
 const lightBlue = `#66E0FF`
 const blueGray = `#282c35`
