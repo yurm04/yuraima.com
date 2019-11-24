@@ -21,6 +21,7 @@ const Contacts = ({ contacts }: Props) => (
             rel="noopener noreferrer"
             target="_blank"
           >
+            <span className="visually-hidden">Go to {name}</span>
             <Icon icon={getIcon(name)} />
           </a>
         </li>
