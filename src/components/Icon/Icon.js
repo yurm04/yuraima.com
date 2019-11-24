@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Icon = ({ icon }: Props) => (
-  <svg className={styles['icon']} viewBox={icon.viewBox}>
+  <svg aria-hidden className={styles['icon']} viewBox={icon.viewBox}>
     <path d={icon.path} />
   </svg>
 );
