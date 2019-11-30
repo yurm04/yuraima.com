@@ -1,15 +1,18 @@
 import "typeface-bungee-shade"
 import merge from "deepmerge"
 import defaultThemeObject from 'gatsby-theme-blog/src/gatsby-plugin-theme-ui/index'
+import {
+  colorText,
+  colorBackground,
+  colorUltraMarineBlue,
+  colorMagicPotion,
+  colorBabyPowder,
+  colorEucalyptus,
+  colorSpanishViolet,
+  gradientFont,
+} from '../utils/styles'
 
 
-export const colorText = "#4c555a"
-export const colorBackground = "#F6F7F9"
-export const colorUltraMarineBlue = "#4D6CFA"
-export const colorMagicPotion = "#FF495C"
-export const colorBabyPowder = "#FCFCFC"
-export const colorEucalyptus = "#3DDC97"
-export const colorSpanishViolet = "#46237A"
 
 
 
@@ -19,6 +22,9 @@ export default merge(defaultThemeObject, {
     background: colorBackground,
     primary: colorSpanishViolet,
     secondary: colorMagicPotion,
+    blue: colorUltraMarineBlue,
+    green: colorEucalyptus,
+    white: colorBabyPowder
   },
   googleFonts: [
     {
@@ -31,23 +37,21 @@ export default merge(defaultThemeObject, {
     heading: "system-ui, sans-serif",
   },
   fontSizes: [
-    16,
-    20,
-    24,
-    32,
-    48,
-    64,
-    72
+    18,
+    22,
+    26,
+    34,
+    50,
+    66,
+    74
   ],
   styles: {
     h1: {
       fontFamily: "Bungee Shade",
-      fontSize: ["32px", "48px", "72px"],
+      fontSizes: [18, 50, 74],
       color: 'primary',
       fontSize: 6,
-      background: `-webkit-linear-gradient(${colorSpanishViolet}, ${colorMagicPotion})`,
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent"
+      ...gradientFont
     },
     a: {
       color: 'primary'
