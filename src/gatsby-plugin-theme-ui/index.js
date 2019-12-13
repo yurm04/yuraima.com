@@ -13,7 +13,7 @@ import {
 } from '../utils/styles'
 
 
-
+console.log(defaultThemeObject)
 
 
 export default merge(defaultThemeObject, {
@@ -35,26 +35,27 @@ export default merge(defaultThemeObject, {
   fonts: {
     body: "Montserrat",
     heading: "system-ui, sans-serif",
+    fontSizes: [
+      18,
+      22,
+      26,
+      34,
+      50,
+      66,
+      74
+    ],
   },
-  fontSizes: [
-    18,
-    22,
-    26,
-    34,
-    50,
-    66,
-    74
-  ],
   styles: {
     h1: {
       fontFamily: "Bungee Shade",
-      fontSizes: [18, 50, 74],
       color: 'primary',
-      fontSize: 6,
       ...gradientFont
     },
     a: {
       color: 'primary'
+    },
+    p: {
+      fontSize: ["1.15rem"]
     }
   }
 })

@@ -10,7 +10,7 @@ const Title = ({ children, location }) => (
   <Styled.h1
     css={css({
       my: 0,
-      fontSize: ["32px", "48px", "72px"],
+      fontSize: ["3.25rem", "3.875rem", "4.5rem"],
     })}
   >
     <Styled.a
