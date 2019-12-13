@@ -2,7 +2,6 @@
 import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 import { Styled } from 'theme-ui'
-import { gradientFont } from '../utils/styles'
 const styles = {
   ul: {
     padding: 0,
@@ -21,8 +20,7 @@ const styles = {
 
 const liStyles = {
   color: 'secondary',
-  fontSize: '21px',
-
+  fontSize: '1.3rem',
 }
 
 export default () => (
