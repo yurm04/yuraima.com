@@ -13,13 +13,13 @@ export const past = [
     confUrl: 'https://2019.cascadiajs.com/',
     talkTitle: 'To all the Code I\'ve Loved Before',
     video: 'https://2019.cascadiajs.com/speakers/yuraima-estevez',
-    date: 'November 2019'
+    date: 'Nov 2019'
   },
   {
     confName: 'React Day New York 2019',
     confUrl: 'https://reactnewyork.com/',
     talkTitle: 'Making React Application Work for Everyone',
-    date: 'September 2019',
+    date: 'Sept 2019',
     video: 'https://reactnewyork.com/#videos',
     slides: 'http://bit.ly/react-day-nyc-a11y'
   },
@@ -27,7 +27,7 @@ export const past = [
     confName: 'Write/Speak/Code 2019',
     confUrl: 'https://www.writespeakcode.com/2019/',
     talkTitle: 'To all the Code I\'ve Loved Before',
-    date: 'August 2019'
+    date: 'Aug 2019'
   },
   {
     confName: 'JSConf Belgium',

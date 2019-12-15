@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { css, useColorMode, Styled } from "theme-ui"
-import Bio from "gatsby-theme-blog/src/components/bio"
+import { css, Styled } from "theme-ui"
+import NavItem from '../../components/navItem'
 import Nav from "../../components/nav"
 
 const rootPath = `${__PATH_PREFIX__}/`
@@ -30,7 +30,7 @@ const Title = ({ children, location }) => (
 export default ({ children, ...props }) => {
   return (
     <header>
-      {props.location.pathname !== rootPath && <Link to="/">Home</Link>}
+      {props.location.pathname !== rootPath && <NavItem as="a" to="/">Home</NavItem>}
       {props.location.pathname === rootPath && (
         <div
           css={css({

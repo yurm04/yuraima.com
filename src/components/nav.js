@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Link } from 'gatsby'
-import { Styled } from 'theme-ui'
+import NavItem from './navItem'
+
 const styles = {
   ul: {
     padding: 0,
@@ -13,8 +13,6 @@ const styles = {
     padding: 0,
     paddingRight: '30px',
     margin: 0,
-    fontWeight: 700,
-    letterSpacing: '.5px',
   }
 }
 
@@ -26,12 +24,8 @@ const liStyles = {
 export default () => (
   <nav css={styles}>
     <ul>
-      <Styled.p as="li">
-        <Link sx={liStyles} to="/speaking/">Speaking</Link>
-      </Styled.p>
-      <Styled.p as="li">
-        <Link sx={liStyles} to="/about/">About</Link>
-      </Styled.p>
+      <NavItem to="/about/">About</NavItem>
+      <NavItem to="/speaking/">Speaking</NavItem>
     </ul>
   </nav>
 )

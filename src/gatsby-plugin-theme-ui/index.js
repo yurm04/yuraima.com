@@ -12,10 +12,6 @@ import {
   gradientFont,
 } from '../utils/styles'
 
-
-console.log(defaultThemeObject)
-
-
 export default merge(defaultThemeObject, {
   colors: {
     text: colorText,
@@ -52,7 +48,7 @@ export default merge(defaultThemeObject, {
       ...gradientFont
     },
     a: {
-      color: 'primary'
+      color: 'secondary'
     },
     p: {
       fontSize: ["1.15rem"]

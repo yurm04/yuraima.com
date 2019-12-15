@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Styled, css } from "theme-ui"
+import { Styled } from "theme-ui"
 import Img from 'gatsby-image'
 import Layout from 'gatsby-theme-blog/src/components/layout'
 import { past, upcomming } from '../data/conferences'
@@ -17,8 +17,8 @@ export default ({ location, data }) => {
         alt="Yuraima speaking at CascadiaJS conference"
         />
       <Styled.p css={{ marginTop: '1rem'}}>
-        I'm available for speaking gigs.  Please <a href="mailto:yurm04@gmail.com?subject=Speaking+Inquiry">reach out!</a>
-        I love talking accessibility, diversity and inclusion in tech, open source and my journey into web development.
+        I'm available for speaking gigs.  Please <Styled.a href="mailto:yurm04@gmail.com?subject=Speaking+Inquiry">reach out!</Styled.a>
+        {' '}I love talking accessibility, diversity and inclusion in tech, open source and my journey into web development.
       </Styled.p>
       <SpeakingList
         title="Upcomming Speaking Engagements"
