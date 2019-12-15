@@ -7,10 +7,10 @@ module.exports = {
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `Yuraima
-    Estevez`,
+    title: `Yuraima Estevez's Blog`,
     author: `Yuraima Estevez`,
-    description: `My site description...`,
+    description: `A place to find some of the stuff I say.`,
+    image: '/content/assets/me.jpg',
     social: [
       {
         name: `twitter`,
