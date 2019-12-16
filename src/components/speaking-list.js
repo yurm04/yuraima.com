@@ -4,9 +4,6 @@
 import React from 'react'
 import { jsx } from 'theme-ui'
 import { Styled } from 'theme-ui'
-import Calendar from './calendar'
-import Slides from './slides'
-import Video from './video'
 import { colorText } from '../utils/styles'
 import Emoji from '../components/emoji'
 
@@ -55,19 +52,19 @@ const SpeakingList = ({ title, listItems }) => {
                 }}>
               {date && (
                   <div css={dataStyle}>
-                    <Calendar />
+                    <Emoji label="calendar" emoji="🗓" />
                     {date}
                   </div>)
                 }
                 {slides && (
                   <div css={dataStyle}>
-                    <Slides />
+                    <Emoji label="slides" emoji="📑" />
                     <Styled.p as="a" href={slides}>slides</Styled.p>
                   </div>)
                 }
                 {video && (
                   <div css={dataStyle}>
-                    <Video />
+                    <Emoji label="video tape" emoji="📼" />
                     <Styled.p as="a" href={video}>video</Styled.p>
                   </div>)
                 }
