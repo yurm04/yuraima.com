@@ -1,11 +1,14 @@
 /** @jsx jsx */
-import React, { Fragment } from 'react'
+/* eslint-disable no-unused-vars */
+
+import React from 'react'
 import { jsx } from 'theme-ui'
 import { Styled } from 'theme-ui'
 import Calendar from './calendar'
 import Slides from './slides'
 import Video from './video'
 import { colorText } from '../utils/styles'
+import Emoji from '../components/emoji'
 
 const styles = {
   padding: 0,
@@ -43,7 +46,7 @@ const SpeakingList = ({ title, listItems }) => {
         return (
             <li css={{ marginBottom: '2rem'}}>
               <strong><Styled.h3 sx={headingStyle} as="a" href={confUrl}>{confName}</Styled.h3></strong>
-              <Styled.p css={{ marginBottom: '.5rem' }}>{type === 'keynote' ? '🔑 📝' : '🗣'} {talkTitle}</Styled.p>
+              <Styled.p css={{ marginBottom: '.5rem' }}>{type === 'keynote' ? <><Emoji label="key" emoji="🔑" /> <Emoji label="note" emoji="📝" /></> : <Emoji label="speaking" emoji="🗣" />} {talkTitle}</Styled.p>
               <div 
                 css={{ 
                   display: 'grid', 

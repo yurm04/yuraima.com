@@ -1,14 +1,12 @@
-/** @jsx jsx */
-import React, { Fragment } from "react"
-import { Styled } from "theme-ui"
-import { jsx } from "theme-ui"
+import React from 'react'
+import Emoji from '../../components/emoji'
 
 /**
  * Change the content to add your own bio
  */
 
 export default () => (
-  <Fragment>
-    Sr. software engineer @nytimes, professional 🐶 greeter, perpetual 🌮 seeker, occasional public speaker
-  </Fragment>
+  <>
+    Sr. software engineer @nytimes, professional <Emoji label="dog" emoji="🐶" /> greeter, perpetual <Emoji label="taco" emoji="🌮"/>seeker, occasional public speaker
+  </>
 )

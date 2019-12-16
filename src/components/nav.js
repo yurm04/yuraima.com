@@ -16,11 +16,6 @@ const styles = {
   }
 }
 
-const liStyles = {
-  color: 'secondary',
-  fontSize: '1.3rem',
-}
-
 export default () => (
   <nav css={styles}>
     <ul>
