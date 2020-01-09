@@ -1,4 +1,5 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import { graphql } from 'gatsby'
 import { Styled } from "theme-ui"
 import Img from 'gatsby-image'
@@ -8,10 +9,10 @@ import SpeakingList from '../components/speaking-list'
 
 export default ({ location, data }) => {
   const { site, file } = data
-  
+  const headingStyle = { fontSize: ["2.45rem", "3.25rem", "3.875rem", "4.5rem"], textAlign: 'center' }
   return (
     <Layout location={location} title={site.siteMetadata.title}>
-      <Styled.h1 css={{ fontSize: ["3.25rem", "3.875rem", "4.5rem"], }}>Speaking Engagements</Styled.h1>
+      <Styled.h1 sx={headingStyle}>Speaking</Styled.h1>
       <Img
         fluid={file.childImageSharp.fluid}
         alt="Yuraima speaking at CascadiaJS conference"

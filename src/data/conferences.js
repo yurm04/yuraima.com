@@ -4,6 +4,12 @@ export const upcomming = [
     confUrl: 'http://reactnorway.com/',
     talkTitle: 'How to do Good Without Doing Anything',
     date: 'June 26th 2020'
+  },
+  {
+    confName: 'Nordic.Online',
+    confUrl: 'https://nordic.online/',
+    talkTitle: 'The Business of Inclusion: How A11y Affects Your Bottom Line',
+    date: 'Oct. 30, 2020'
   }
 ]
 

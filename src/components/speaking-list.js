@@ -33,6 +33,12 @@ const dataStyle = {
   }
 }
 
+const DataItem = ({ children }) => (
+  <div css={dataStyle}>
+    {children}
+  </div>
+)
+
 const SpeakingList = ({ title, listItems }) => {
   return (
     <>
@@ -43,30 +49,30 @@ const SpeakingList = ({ title, listItems }) => {
         return (
             <li css={{ marginBottom: '2rem'}}>
               <strong><Styled.h3 sx={headingStyle} as="a" href={confUrl}>{confName}</Styled.h3></strong>
-              <Styled.p css={{ marginBottom: '.5rem' }}>{type === 'keynote' ? <><Emoji label="key" emoji="🔑" /> <Emoji label="note" emoji="📝" /></> : <Emoji label="speaking" emoji="🗣" />} {talkTitle}</Styled.p>
+              <Styled.p css={{ marginBottom: '.5rem' }}>{type === 'keynote' ? <><Emoji label="key" emoji="🔑" /> <Emoji label="note" emoji="📝" /></> : <Emoji label="speaking" emoji="🗣" />} <span css={{ fontStyle: 'italic' }}>{talkTitle}</span></Styled.p>
               <div 
                 css={{ 
                   display: 'grid', 
                   'grid-template-columns': 'repeat(3, 1fr)', 
                   marginBottom: '1rem' 
                 }}>
-              {date && (
-                  <div css={dataStyle}>
-                    <Emoji label="calendar" emoji="🗓" />
-                    {date}
-                  </div>)
-                }
+                {date && (
+                    <DataItem>
+                      <Emoji label="calendar" emoji="🗓" />
+                      {date}
+                    </DataItem>)
+                  }
                 {slides && (
-                  <div css={dataStyle}>
+                  <DataItem>
                     <Emoji label="slides" emoji="📑" />
                     <Styled.p as="a" href={slides}>slides</Styled.p>
-                  </div>)
+                  </DataItem>)
                 }
                 {video && (
-                  <div css={dataStyle}>
+                  <DataItem>
                     <Emoji label="video tape" emoji="📼" />
                     <Styled.p as="a" href={video}>video</Styled.p>
-                  </div>)
+                  </DataItem>)
                 }
               </div>
             </li>
