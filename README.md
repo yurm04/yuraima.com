@@ -4,5 +4,3 @@
 Built with [Gatsby](https://www.gatsbyjs.org)
 
 `npm start`
-
-TODO: 
