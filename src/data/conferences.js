@@ -1,9 +1,15 @@
 export const upcomming = [
   {
+    confName: 'JSDay',
+    confUrl: 'https://2020.jsday.it/talks.html#yuraima-estevez',
+    talkTitle: 'How to do Good Without Doing Anything',
+    date: 'May 12, 2020'
+  },
+  {
     confName: 'React Day Norway 2020',
     confUrl: 'http://reactnorway.com/',
     talkTitle: 'How to do Good Without Doing Anything',
-    date: 'June 26th 2020'
+    date: 'June 26, 2020'
   },
   {
     confName: 'Nordic.Online',
@@ -14,6 +20,14 @@ export const upcomming = [
 ]
 
 export const past = [
+  {
+    confName: 'Gatsby Days LA 2020',
+    confUrl: 'https://www.gatsbyjs.com/resources/gatsby-days/',
+    talkTitle: 'TL;DR Accessible React Components',
+    date: 'Feb 2020',
+    slides: 'https://tldr-a11y.yuraima.com'
+
+  },
   {
     confName: 'CascadiaJS 2019',
     confUrl: 'https://2019.cascadiajs.com/',
