@@ -2,23 +2,28 @@
 import { jsx } from 'theme-ui'
 import { graphql } from 'gatsby'
 import { Styled } from "theme-ui"
-import Img from 'gatsby-image'
+import Image from '../components/Image'
 import Layout from 'gatsby-theme-blog/src/components/layout'
 
-const getImages = (images) => (images.map(i => (<img style={{ 'max-width': '100%' }} src={`/moving/${i}.jpeg`} />)))
+// const getImages = (images) => (images.map(i => (<img style={{ 'max-width': '100%' }} src={`/moving/${i}.jpeg`} />)))
 
-const ListItem = ({ name, img, price, desc, children }) => (
-  <div style={{'margin-bottom': '15px'}}>
-    <Styled.h2>{name} ${price}</Styled.h2>
-    {children}
-    {desc && <Styled.p>{desc}</Styled.p>}
-    {img && getImages(img)}
-  </div>
-)
+
 
 export default ({ location, data }) => {
-  const { site, file } = data
+  const { site, allImageSharp } = data
+  const getImages = (images) => (images.map(i => (<Image fileName={i} allImageSharp={allImageSharp} />)))
+
+  const ListItem = ({ name, img, price, desc, children }) => (
+    <div style={{'margin-bottom': '15px'}}>
+      <Styled.h2>{name} ${price}</Styled.h2>
+      {children}
+      {desc && <Styled.p>{desc}</Styled.p>}
+      {img && getImages(img)}
+    </div>
+  )
+
   const headingStyle = { fontSize: ["2.45rem", "3.25rem", "3.875rem", "4.5rem"], textAlign: 'center' }
+
   return (
     <Layout location={location} title={site.siteMetadata.title}>
       <Styled.h1 sx={headingStyle}>I'm Moving!</Styled.h1>
@@ -74,11 +79,10 @@ export const query = graphql`
       }
     }
 
-    file(relativePath: { eq: "speaking-large.jpg" }) {
-      childImageSharp {
-        # Specify a fixed image and fragment.
-        # The default width is 400 pixels
+    allImageSharp {
+      nodes {
         fluid {
+          originalName
           ...GatsbyImageSharpFluid
         }
       }
