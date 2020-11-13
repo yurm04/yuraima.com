@@ -11,7 +11,7 @@ const Image = ({ fileName, alt, allImageSharp }) => {
   if (image) {
     return (
       <figure>
-        <Img imgStyle={{ 'objectFit': 'contain'}} fluid={image.fluid} alt={alt}/>
+        <Img style={{"max-width": "100%"}} imgStyle={{ 'objectFit': 'contain'}} fluid={image.fluid} alt={alt}/>
       </figure>
     )
   }
