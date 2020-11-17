@@ -34,21 +34,21 @@ export default ({ location, data }) => {
       <ListItem name="Bed frame, full" price={150} img={['bed1', 'bed2', 'bed3']} />
       <ListItem name="Tuft and Needle mattress, full" price={350} img={['mattress1', 'mattress2']}/>
       <ListItem name='43" TCL 4K Roku Smart TV' price={250} img={['tv1', 'tv2', 'tv3', 'tv4', 'tv5', 'tv6']} desc="Roku smart TV with all the apps. A year old and in perfect condition." />
-      <ListItem name="White-ish rug" price={75} img={['rug1']}>
+      {/* <ListItem name="White-ish rug" price={75} img={['rug1']}>
         <Styled.p>6' ish x 5' ish rug. This rug is absolutely ✨PRISTINE✨ due to this being a shoe-free household. You could eat off of this rug if you wanted to. I don't, because that's super weird, but what you do with this rug after it's yours is your business.</Styled.p>
-      </ListItem>
+      </ListItem> */}
       <ListItem name="Tall table with stools" price={100} img={['table1', 'table2', 'table3', 'table4']}/>
       <ListItem name="End table one" price={35} img={['endtable3', 'endtable4']}/>
       <ListItem name="End table two" price={20} img={['endtable1']}/>
       {/* <ListItem name="End table/bar" img={['endtable2']} price={50} desc="I think this is an end table but it holds my liquor so it is, in spirit, a bar (pun intended)." /> */}
       {/* <ListItem name="Floor Lamp" price={80} img={['lamp3']} desc="I have turned this lamp on exactly three times. Humble brag but I have a lot of light in my apartment so I never actually needed it. Will even throw in the mint condition lightbulb." /> */}
       <ListItem name="Table Lamp" price={50} img={['lamp1', 'lamp2']}/>
-      <ListItem name="Mirror" price={50} img={['mirror1', 'mirror2']}/>
+      {/* <ListItem name="Mirror" price={50} img={['mirror1', 'mirror2']}/> */}
       <ListItem name="Robot Vacuum" price={150}>
         <Styled.p>A year old and affectionately named Eustace <a href="https://www.amazon.com/gp/product/B079QYYGF1">Eufy</a> (but you can rename). Has kept my apartment spotless.</Styled.p>
       </ListItem>
       
-      <ListItem name="Kitchen shit" price="???" img={['kitchen1', 'kitchen2', 'kitchen3', 'kitchen4', 'kitchen5']}>
+      <ListItem name="Kitchen shit" price="???" img={['kitchen1', 'kitchen2', 'kitchen4', 'kitchen5']}>
         <Styled.p>There's a bunch of stuff here. Tell me what you need and we'll figure out a fair price."</Styled.p>
         <Styled.ul>
           <Styled.li>Silverware set</Styled.li>
@@ -56,7 +56,7 @@ export default ({ location, data }) => {
           <Styled.li>Bowl set</Styled.li>
           <Styled.li>Mason Jars, mugs, cups</Styled.li>
           <Styled.li>Knife Set</Styled.li>
-          <Styled.li>Blender</Styled.li>
+          {/* <Styled.li>Blender</Styled.li> */}
           <Styled.li>Pots and pans</Styled.li>
           <Styled.li>Toaster</Styled.li>
           <Styled.li>Baking things</Styled.li>
