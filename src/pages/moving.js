@@ -29,9 +29,9 @@ export default ({ location, data }) => {
       <Styled.h1 sx={headingStyle}>I'm Moving!</Styled.h1>
       <Styled.p>So everything in my apartment has to go. All things are in great condition and prices are listed. Open to delivering some things if you're not too far. Can strike a deal if you take more than one thing. You know how to get in touch with me if you got to this page...</Styled.p>
       <ListItem name="Article couch" price={800} img={['couch1', 'couch2', 'couch3', 'couch4']}>
-        <Styled.p>One year old and still beautiful because 7 months of that year I was the only one sitting on it (s i g h. Pandemic life). <a href="https://www.article.com/product/1479/ceni-pyrite-gray-sofa">All in with tax and shipping it cost me $1200</a>. I love this couch, and I hate to sell it. But it'd be weird if I tried to take it with me on my cross-country travels...</Styled.p>
+        <Styled.p>6ft. 11in. wide by 2ft. 11in. deep. One year old and still beautiful because 7 months of that year I was the only one sitting on it (s i g h. Pandemic life). <a href="https://www.article.com/product/1479/ceni-pyrite-gray-sofa">All in with tax and shipping it cost me $1200</a>. I love this couch, and I hate to sell it. But it'd be weird if I tried to take it with me on my cross-country travels...</Styled.p>
       </ListItem>
-      <ListItem name="Bed frame, full" price={150} img={['bed1', 'bed2', 'bed3']} />
+      <ListItem name="Bed frame, full" price={150} img={['bed1', 'bed2', 'bed3']} desc="82in. long, 56in. wide. Frabric headreast and slatted platform"/>
       <ListItem name="Tuft and Needle mattress, full" price={350} img={['mattress1', 'mattress2']}/>
       <ListItem name='43" TCL 4K Roku Smart TV' price={250} img={['tv1', 'tv2', 'tv3', 'tv4', 'tv5', 'tv6']} desc="Roku smart TV with all the apps. A year old and in perfect condition." />
       {/* <ListItem name="White-ish rug" price={75} img={['rug1']}>
@@ -44,6 +44,10 @@ export default ({ location, data }) => {
       {/* <ListItem name="Floor Lamp" price={80} img={['lamp3']} desc="I have turned this lamp on exactly three times. Humble brag but I have a lot of light in my apartment so I never actually needed it. Will even throw in the mint condition lightbulb." /> */}
       <ListItem name="Table Lamp" price={50} img={['lamp1', 'lamp2']}/>
       {/* <ListItem name="Mirror" price={50} img={['mirror1', 'mirror2']}/> */}
+      <ListItem name="PHILIPS FIDELIO L1 AUDIOPHILE HEADPHONES" price={100} img={['headphones1', 'headphones2']}>
+        <Styled.p><Styled.a href="https://www.cnet.com/reviews/philips-fidelio-l1-headphones-review/">These</Styled.a> are great headphones, but I never used them much so I'm hoping they'll find someone who really appreciates them.</Styled.p>      
+      </ListItem>
+      <ListItem name="Wooden Laundry Hamper" price={20} img={['hamper1', 'hamper2']} desc='Even your dirty clothes deserve to live a life of luxury. 20.5in. wide, 22.5in. tall, 13in. deep'/>
       <ListItem name="Robot Vacuum" price={150}>
         <Styled.p>A year old and affectionately named Eustace <a href="https://www.amazon.com/gp/product/B079QYYGF1">Eufy</a> (but you can rename). Has kept my apartment spotless.</Styled.p>
       </ListItem>
